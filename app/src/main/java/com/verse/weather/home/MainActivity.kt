@@ -2,6 +2,7 @@ package com.verse.weather.home
 
 import android.graphics.Color
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.fragment.app.Fragment
 import com.scwang.smartrefresh.layout.header.ClassicsHeader
 import com.verse.weather.R
 import com.verse.weather.base.BaseActivity
@@ -13,7 +14,7 @@ class MainActivity : BaseActivity() {
     override fun getLayout() = R.layout.activity_main
 
     override fun initView() {
-        setSupportActionBar(toolbar)
+//        setSupportActionBar(toolbar)
 
         //设置 Header 为 Material风格
         val header = ClassicsHeader(this)
@@ -31,10 +32,10 @@ class MainActivity : BaseActivity() {
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        var homePageFragemnt: HomePageFragment  = supportFragmentManager.findFragmentById(R.id.fragment_container) as HomePageFragment
+        var homePageFragemnt: Fragment? = supportFragmentManager.findFragmentById(R.id.fragment_container)
         if (homePageFragemnt == null) {
             homePageFragemnt = HomePageFragment.getIntance()
-            supportFragmentManager.beginTransaction().add(R.id.fragment_container, homePageFragemnt)
+            supportFragmentManager.beginTransaction().add(R.id.fragment_container, homePageFragemnt).commit()
         }
 
     }

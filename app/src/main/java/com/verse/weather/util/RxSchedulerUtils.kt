@@ -1,5 +1,8 @@
 package com.verse.weather.util
 
-class RxSchedulerUtils {
+import io.reactivex.android.schedulers.AndroidSchedulers
+import rx.Observable
+import rx.schedulers.Schedulers
 
+class RxSchedulerUtils {
 }

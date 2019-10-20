@@ -122,7 +122,7 @@
                     android:textSize="@dimen/text_size_headline"
                     tools:text="优" />
 
-                <com.baronzhang.android.widget.IndicatorView
+                <com.verse.weather.widget.IndicatorView
                     android:id="@+id/indicator_view_aqi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
