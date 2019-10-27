@@ -1,8 +1,7 @@
 package com.verse.weather.http.api
 
-import com.verse.weather.bean.MiWeather
+import com.verse.weather.data.bean.MiWeather
 import retrofit2.http.GET
-import retrofit2.http.Path
 import retrofit2.http.Query
 import rx.Observable
 

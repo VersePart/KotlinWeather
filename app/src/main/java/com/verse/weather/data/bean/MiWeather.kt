@@ -1,4 +1,4 @@
-package com.verse.weather.bean
+package com.verse.weather.data.bean
 
 data class MiWeather(
     val accu_cc: AccuCc,
