@@ -4,7 +4,6 @@ import android.app.Application
 
 class App : Application() {
 
-    lateinit var instance: App
 
     override fun onCreate() {
         super.onCreate()
@@ -13,6 +12,10 @@ class App : Application() {
 //            .applicationModule(ApplicationModule(this))
 //            .build()
 
+    }
+
+    companion object {
+        lateinit var instance: App
     }
 
 }

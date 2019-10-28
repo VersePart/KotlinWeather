@@ -1,11 +1,11 @@
-package com.verse.weather.http.api
+package com.verse.weather.http.api.service
 
 import com.verse.weather.data.bean.MiWeather
 import retrofit2.http.GET
 import retrofit2.http.Query
 import rx.Observable
 
-interface WeatherApi {
+interface WeatherService {
 
     /**
      * http://weatherapi.market.xiaomi.com/wtr-v2/weather?cityId=101010100
